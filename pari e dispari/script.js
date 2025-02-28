@@ -17,6 +17,10 @@ console.log("Mike's Pari e Dispari")
     - stampo "hai vinto"
 */
 
+const oddEven = prompt("inserisci pari o dispari");
+console.log(`Hai scelto ${oddEven}`);
+
+
 let userNumberChoice;
 let isNumberValid;
 let retries = 5;
@@ -26,9 +30,27 @@ while (isNumberValid !== true && retries >0){
     isNumberValid = userNumberChoice >0 && userNumberChoice <6 && !isNaN(userNumberChoice);
     retries --;
 }
-
+console.log(`Hai scelto: ${userNumberChoice}`);
 let computerNumberChoice = Math.ceil(Math.random()*5);
-console.log(computerNumberChoice);
+console.log(`Il computer ha scelto: ${computerNumberChoice}`);
 
 let sum = userNumberChoice + computerNumberChoice;
-console.log(sum);
+console.log(`La somma dei due numeri è: ${sum}`);
+
+function isNumberOdd (myNumber){
+    if(myNumber%2!==0){
+        return true;
+    } else {
+        return false;
+    }
+}
+
+if (isNumberOdd(sum)===true && oddEven === "dispari"){
+    console.log("Hai vinto");
+} else if (isNumberOdd(sum)===false && oddEven === "dispari"){
+    console.log("Hai perso");
+} else if (isNumberOdd(sum)===true && oddEven === "pari"){
+    console.log("Hai perso");
+} else if (isNumberOdd(sum)===false && oddEven === "pari"){
+    console.log("Hai vinto");
+}
