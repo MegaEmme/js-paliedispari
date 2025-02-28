@@ -30,3 +30,5 @@ while (isNumberValid !== true && retries >0){
 let computerNumberChoice = Math.ceil(Math.random()*5);
 console.log(computerNumberChoice);
 
+let sum = userNumberChoice + computerNumberChoice;
+console.log(sum);
