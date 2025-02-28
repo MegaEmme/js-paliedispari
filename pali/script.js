@@ -13,20 +13,25 @@ console.log("Mike's Palindrome");
 
 const userWord = prompt('Inserisci una parola');
 
-function wordReverser (aWord) { 
-    let reverser = aWord   
-    for(let i = 0; i<aWord.lenght; i++){
+function wordReverser (aWord) {
+    
+    let reversedWord ='';
+
+    for(let i=aWord.length - 1; i>=0; i--){
+        reversedWord += aWord[i];
     }
-    return reverser;
+    return reversedWord;
 }
 
-// const reversedWord = wordReverser(userWord);
+console.log(wordReverser(userWord));
 
-// if (userWord === reversedWord){
-//     console.log(`La parola ${userWord} al contrario si legge ${reversedWord} perciò è palindroma`);
-// } else {
-//     console.log(`La parola ${userWord} al contrario si legge ${reversedWord} perciò non è palindroma`);
-// }
+const reversedWord = wordReverser(userWord);
+
+if (userWord === reversedWord){
+    console.log(`La parola ${userWord} al contrario si legge ${reversedWord} perciò è palindroma`);
+} else {
+    console.log(`La parola ${userWord} al contrario si legge ${reversedWord} perciò non è palindroma`);
+}
 
 
 
