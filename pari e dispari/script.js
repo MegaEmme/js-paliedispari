@@ -1,11 +1,15 @@
 console.log("Mike's Pari e Dispari")
 
 /*
-- chiedo all'utente di scegliere se pari o dispari
-- salvo la scelta in una variabile 
+- chiedo all'utente di scegliere se pari o dispari 
+- salvo la scelta in una variabile oddEven 
+- stampo la variabile oddEven
 - chiedo all'utente di inserire un numero da 1 a 5
+- stampo il numero scelto
 - calcolo un numero randomico da 1 a 5 con una **funzione**
+- stampo il valore scelto dal computer
 - sommo i due valori e li salvo in una variabile
+- stampo la somma dei due valori
 - creo una **funzione** isNumberOdd dal possibile valore *true* o *false*
 - **se** ho scelto dispari e la **funzione** isNumberOdd restituisce *true*
     - stampo "hai vinto"
@@ -13,7 +17,7 @@ console.log("Mike's Pari e Dispari")
     - stampo "hai perso"
 - **altrimenti se** ho scelto pari e la **funzione** isNumberOdd restituisce *true*
     - stampo "hai perso"
-- **altrimenti**
+- **altrimenti se** ho scelto pari e la **funzione** isNumberOdd restituisce *false*
     - stampo "hai vinto"
 */
 

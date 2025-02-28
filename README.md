@@ -10,9 +10,7 @@ Creare una funzione per capire se la parola inserita è palindroma
 - chiedo all'utente di inserire una parola
 - la salvo in una variabile
 - creo una **funzione**
-    - divido la parola inserita in singoli caratteri (.split) di un array
-    - inverto i valori dell'array (.reverse)
-    - riunisco i valori dell'array in una stringa (.join)
+    - inverto la parola attraverso l'utilizzo di un ciclo for
     - **se** la nuova parola è uguale a quella inserita dall'utente
         - stampo "la parola è palindroma"
     - **altrimenti**
