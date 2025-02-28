@@ -17,3 +17,16 @@ console.log("Mike's Pari e Dispari")
     - stampo "hai vinto"
 */
 
+let userNumberChoice;
+let isNumberValid;
+let retries = 5;
+
+while (isNumberValid !== true && retries >0){
+    userNumberChoice = parseInt(prompt('Inserisci un numero da 1 a 5'));
+    isNumberValid = userNumberChoice >0 && userNumberChoice <6 && !isNaN(userNumberChoice);
+    retries --;
+}
+
+let computerNumberChoice = Math.ceil(Math.random()*5);
+console.log(computerNumberChoice);
+
