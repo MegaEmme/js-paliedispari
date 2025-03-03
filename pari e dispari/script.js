@@ -57,4 +57,6 @@ if (isNumberOdd(sum)===true && oddEven === "dispari"){
     console.log("Hai perso");
 } else if (isNumberOdd(sum)===false && oddEven === "pari"){
     console.log("Hai vinto");
+} else {
+    console.log('Hai sbagliato a inserire qualcosa..');
 }
